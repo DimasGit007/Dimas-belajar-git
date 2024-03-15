@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-list {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-item {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.movie-item img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.movie-item :last-child{
+    border-bottom: none;
+    
+}
+
+.movie-details {
+    flex-grow: 1;
+}
+
+.movie-year {
+    color: #777;
+    margin-bottom: 10px;
+}
