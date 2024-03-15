@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const movieItem = document.createElement('li')
     movieItem.className = 'movie-item'
 
+    const anchorTOVideo = document.createElement('a')
+    anchorTOVideo.href = trailer.videoLink
+    anchorTOVideo.target = '_blank'
+
     const poster = document.createElement('img')
     poster.src = trailer.image
     poster.alt = trailer.title
@@ -51,8 +55,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     trailerDetail.appendChild(title)
     trailerDetail.appendChild(released)
     trailerDetail.appendChild(trailerLength)
+
+    anchorTOVideo.appendChild(poster)
     
-    movieItem.appendChild(poster)
+    movieItem.appendChild(anchorTOVideo)
     movieItem.appendChild(trailerDetail)
 
     movieList.appendChild(movieItem)
